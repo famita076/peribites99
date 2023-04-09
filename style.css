@@ -1,0 +1,48 @@
+body {
+    font-family: cursive, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', arial, sans-serif;
+}
+
+.main-color {
+    background-color : rgb(114,2,114) !important;
+}
+
+.banner {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('image/banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hovered-card{
+    transition: .3s;
+}
+
+.hovered-card:hover {
+    transform: scale(1.1);
+}
+
+.ikon-service{
+    width: 75px;
+    height: 75px;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.container-footer {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.banner-produk{
+    height: 55vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('tokoonline/image/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-promo{
+    height: 55vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('tokoonline/image/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}

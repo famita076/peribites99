@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peri Bites Cafe & Resto | Promo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+</head>
+
+<body>
+
+    <!-- bagian navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark main-color">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="navbar-brand me-auto" href="#">Peri Bites Cafe & Resto</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="produk.html">Produk</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link active" href="#">Promo</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="kart.html" tabindex="-1" aria-disabled="true"><i
+                                class="bi bi-cart"></i>
+                            Keranjang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- bagian awal banner -->
+    <section>
+        <div class="container-fluid banner-promo d-flex align-items-center">
+            <div class="container">
+                <h2 class="text-light text-center display-7 mb-1">Semua Promo Buat Anda</h2>
+            </div>
+        </div>
+    </section>
+    <!-- bagian akhir banner -->
+
+    <!-- bagian promo -->
+    <section>
+        <div class="container-fluid py-5">
+            <div class="container">
+                <!-- kategori promo -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-sm-4 col-md-3 col-2 mb-3">
+                        <button id="semuaPromoBtn" onclick="showAll()" class="btn btn-outline-warning w-100 fs-5 active">Semua Promo</button>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-2 mb-3">
+                        <button id="discPromoBtn" onclick="showDiskon()" class="btn btn-outline-warning w-100 fs-5">Promo Diskon</button>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-2 mb-3">
+                        <button id="bonusPromoBtn" onclick="showBonus()" class="btn btn-outline-warning w-100 fs-5">Promo Bonus</button>
+                    </div>
+                </div>
+                <!-- isi promo -->
+                <div id="semuapromo">
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-sm-3 hovered-card mb-3">
+                            <div class="card">
+                                <a href="image/product/chocolate-mousse.jpg" data-lightbox="Chocolate Mouse"
+                                    data-title="Chocolate Mpuse">
+                                    <img src="image/product/thumb/chocolate-mousse.jpg " class="card-img-top"
+                                        alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Beli 1 Gratis 1</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Earum, temporibus?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-3 hovered-card mb-3">
+                            <div class="card">
+                                <a href="image/product/coffee.jpg" data-lightbox="Coffee"
+                                    data-title="Coffee">
+                                    <img src="image/product/thumb/coffee.jpg " class="card-img-top"
+                                        alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Gratis Cappucino</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Earum, temporibus?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-3 hovered-card mb-3">
+                            <div class="card">
+                                <a href="image/product/brownies.jpg" data-lightbox="brownies"
+                                    data-title="Brownies">
+                                    <img src="image/product/thumb/brownies.jpg " class="card-img-top"
+                                        alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Gratis Brownies</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Earum, temporibus?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-3 hovered-card mb-3">
+                            <div class="card">
+                                <a href="image/product/skewer.jpg" data-lightbox="Skewer"
+                                    data-title="Skewer">
+                                    <img src="image/product/thumb/skewer.jpg " class="card-img-top"
+                                        alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Skewer Disc 20%</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Earum, temporibus?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-3 hovered-card mb-3">
+                            <div class="card">
+                                <a href="image/product/cereal.jpg" data-lightbox="Cereal"
+                                    data-title="Cereal">
+                                    <img src="image/product/thumb/cereal.jpg " class="card-img-top"
+                                        alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Cereal Disc 20%</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Earum, temporibus?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-3 hovered-card mb-3">
+                            <div class="card">
+                                <a href="image/product/steak.jpg" data-lightbox="Steak" data-title="Steak">
+                                    <img src="image/product/thumb/steak.jpg " class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Steak Disc 20%</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Earum, temporibus?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- promo diskon -->
+                <div id="promodiskon">
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-sm-3 hovered-card mb-3">
+                            <div class="card">
+                                <a href="image/product/skewer.jpg" data-lightbox="Skewer"
+                                    data-title="Skewer">
+                                    <img src="image/product/thumb/skewer.jpg " class="card-img-top"
+                                        alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Skewer Disc 20%</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Earum, temporibus?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-3 hovered-card mb-3">
+                            <div class="card">
+                                <a href="image/product/cereal.jpg" data-lightbox="Cereal"
+                                    data-title="Cereal">
+                                    <img src="image/product/thumb/cereal.jpg " class="card-img-top"
+                                        alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Cereal Disc 20%</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Earum, temporibus?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-3 hovered-card mb-3">
+                            <div class="card">
+                                <a href="image/product/steak.jpg" data-lightbox="Steak" data-title="Steak">
+                                    <img src="image/product/thumb/steak.jpg " class="card-img-top" alt="...">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Steak Disc 20%</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Earum, temporibus?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- akhir promo diskon -->
+
+            <!-- promo bonus -->
+            <div id="promobonus">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/chocolate-mousse.jpg" data-lightbox="Chocolate Mouse"
+                                data-title="Chocolate Mpuse">
+                                <img src="image/product/thumb/chocolate-mousse.jpg " class="card-img-top"
+                                    alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Beli 1 Gratis 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Earum, temporibus?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/coffee.jpg" data-lightbox="Coffee" data-title="Coffee">
+                                <img src="image/product/thumb/coffee.jpg " class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Gratis Cappucino</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Earum, temporibus?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-3 hovered-card mb-3">
+                        <div class="card">
+                            <a href="image/product/brownies.jpg" data-lightbox="brownies"
+                                data-title="Brownies">
+                                <img src="image/product/thumb/brownies.jpg " class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Gratis Brownies</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Earum, temporibus?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- akhir promo bonus -->
+        </div>
+    </section>
+    <!-- akhir bagian promo -->
+
+    <!-- bagian temui kami -->
+    <section>
+        <div class="container-fluid py-5 container-footer text-light">
+            <div class="container">
+                <h5 class="text-center mb-4">Temui Kami</h5>
+                <div class="row justify-content-center">
+                    <div class="col-2 col-sm-1 d-flex justify-content-center">
+                        <i class="bi bi-instagram fs-4"></i>
+                    </div>
+
+                    <div class="col-2 col-sm-1 d-flex justify-content-center">
+                        <i class="bi bi-twitter fs-4"></i>
+                    </div>
+
+                    <div class="col-2 col-sm-1 d-flex justify-content-center">
+                        <i class="bi bi-whatsapp fs-4"></i>
+                    </div>
+
+                    <div class="col-2 col-sm-1 d-flex justify-content-center">
+                        <i class="bi bi-youtube fs-4"></i>
+                    </div>
+                </div>
+
+                <h5 class="text-center mt-5 mb-0">Subscribe</h5>
+                <p class="text-center font-monospace">Untuk informasi tentang promo</p>
+                <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                    <div class="input-group mb-3 ">
+                        <input type="text" class="form-control" placeholder="Ketik E-mail" aria-label="E-mail"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-warning text-light" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir bagian temui kami -->
+
+    <!-- bagian footer -->
+    <section>
+        <div class="container-fluid py-3 bg-dark text-light">
+            <div class="container d-flex justify-content-between">
+                <label>&copy;2020 Peri Bites Cafe & Resto</label>
+                <label>Created by famitaww_076</label>
+            </div>
+        </div>
+    </section>
+    <!-- akhir bagian footer -->
+
+
+
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var semuaPromoBtn = $("#semuaPromoBtn");
+        var discPromoBtn = $("#discPromoBtn");
+        var bonusPromoBtn = $("bonusPromoBtn");
+
+        var semuapromoView = $("#semuapromo")
+        var promodiskonView = $("#promodiskon")
+        var promobonusView = $("#promobonus")
+
+        promodiskonView.hide();
+        promobonusView.hide();
+
+        function showAll(){
+            semuaPromoBtn.addClass('active');
+            bonusPromoBtn.removeClass('active');
+            discPromoBtn.removeClass('active');
+
+            semuapromoView.show(1000);
+            promobonusView.hide(1000);
+            promodiskonView.hide(1000);
+        }
+
+        function showDiskon(){
+            semuaPromoBtn.removeClass('active');
+            bonusPromoBtn.removeClass('active');
+            discPromoBtn.addClass('active');
+
+            semuapromoView.hide(1000);
+            promobonusView.hide(1000);
+            promodiskonView.show(1000);
+        }
+
+        function showBonus(){
+            semuaPromoBtn.removeClass('active');
+            bonusPromoBtn.addClass('active');
+            discPromoBtn.removeClass('active');
+
+            semuapromoView.hide(1000);
+            promobonusView.show(1000);
+            promodiskonView.hide(1000);
+        }
+    </script>
+</body>
+
+</html>
